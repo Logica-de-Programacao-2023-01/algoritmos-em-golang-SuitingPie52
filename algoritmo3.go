@@ -1,17 +1,16 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
+	var x int
 
-	var peso float64
-	var altura float64
-
-	fmt.Println("Informe seu peso (em quilos).")
-	fmt.Scanln(&peso)
-	fmt.Println("Informe sua altura (em metros).")
-	fmt.Scanln(&altura)
-	fmt.Println("Seu IMC é:", peso/(altura*altura))
+	fmt.Println("Escreva um número inteiro.")
+	fmt.Scanln(&x)
+	fmt.Print("Seu número é: ")
+	if x%2 == 0 {
+		fmt.Print("par.")
+	} else {
+		fmt.Print("ímpar.")
+	}
 }
